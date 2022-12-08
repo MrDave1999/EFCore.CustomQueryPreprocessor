@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <PackageId>EFCore.CustomQueryPreprocessor</PackageId>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -18,9 +18,9 @@
 
   <ItemGroup>
     <PackageReference Include="DelegateDecompiler" Version="0.30.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.10" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
 
 </Project>
