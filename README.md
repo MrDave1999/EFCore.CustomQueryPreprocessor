@@ -9,9 +9,13 @@ Read Ivan Stoev original answer: https://stackoverflow.com/a/62138200
 
 ## Installation
 
-Execute the following command in the terminal:
+Run the following command in the terminal if your project is using EF Core 3.1/5.0:
 ```bash
-dotnet add package EFCore.CustomQueryPreprocessor
+dotnet add package EFCore.CustomQueryPreprocessor -v 1.0.0
+```
+In case your project uses EF Core 6.0/7.0, run the following:
+```cs
+dotnet add package EFCore.CustomQueryPreprocessor -v 2.0.0
 ```
 
 ## Usage
