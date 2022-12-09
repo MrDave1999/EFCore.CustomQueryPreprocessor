@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <PackageId>EFCore.CustomQueryPreprocessor</PackageId>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -11,16 +11,19 @@
     <RepositoryUrl>https://github.com/MrDave1999/EFCore.CustomQueryPreprocessor</RepositoryUrl>
     <PackageTags>entity-framework-core, Entity, Core, ef, efcore, core, orm, query, Query-Preprocessor, query-preprocessor, QueryPreprocessor</PackageTags>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-    <Version>1.0.0</Version>
+    <Version>2.0.0</Version>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <NoWarn>1591</NoWarn>
+    <PackageReleaseNotes>
+      - This release is only for consumers using EF Core 6.0/7.0.
+    </PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="DelegateDecompiler" Version="0.30.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.10" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
 
 </Project>
