@@ -18,6 +18,7 @@ public class CustomOptionsExtension : IDbContextOptionsExtension
         public override bool IsDatabaseProvider => false;
         public override string LogFragment => string.Empty;
         public override void PopulateDebugInfo(IDictionary<string, string> debugInfo) { }
-        public override long GetServiceProviderHashCode() => Extension.Processors.Count;
+        public override int GetServiceProviderHashCode() => Extension.Processors.Count;
+        public override bool ShouldUseSameServiceProvider(DbContextOptionsExtensionInfo other) => true;
     }
 }
